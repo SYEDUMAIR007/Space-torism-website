@@ -1,0 +1,724 @@
+/* Reset some default styles and set global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bellefair', serif;
+  color: #FFFFFF;
+  font-weight: lighter;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 80px;
+  margin: 25px 0 20px 0;
+  line-height: 100px;
+}
+
+h3 {
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.home-content h5 {
+  margin-top: -50px;
+}
+
+p {
+  font-size: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  line-height: 25px;
+  color: #D0D6F9;
+  text-align: center;
+  padding: 0 23px 20px 23px;
+}
+
+.subHeading1 {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.subHeading2 {
+  padding: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  letter-spacing: 2.36px;
+}
+
+.subHeading3 {
+  color: #ffffff6b;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding:  0;
+}
+
+/* Background Styles */
+
+.background {
+  height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.homepg {
+  background-image: url(./assets/home/background-home-mobile.jpg);
+  background-size: cover;
+
+
+}
+
+.crewpg {
+  background: url(./assets/crew/background-crew-mobile.jpg);
+  background-size: cover;
+
+}
+
+.destinationspg {
+  background: url(./assets/destination/background-destination-mobile.jpg);
+  background-size: cover;
+}
+
+.launchpg {
+  background: url(./assets/technology/background-technology-mobile.jpg);
+  background-size: cover;
+}
+
+
+/* Layout and Navigation Styles */
+.home-content {
+  margin: 48px 0px 24px 0px;
+  text-align: center;
+  padding-top: 60px;
+}
+.content{
+  text-align: center;
+}
+
+/* components Styles */
+.landingpgBtn {
+  font-family: 'Bellefair', serif;
+  background-color: #FFFFFF;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  color: #0B0D17;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.landingpgBtn-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff1c;
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  
+}
+
+.tabBar {
+  margin-bottom: 14px;
+  cursor: pointer;
+   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 27px;
+
+}
+
+.tabBar a {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  letter-spacing: 2.7px;
+  cursor: pointer;
+}
+
+.tabBar a:hover {
+  color: #FFFFFF;
+  border-bottom: 3px solid #ffffff52;
+}
+ .tabBar .active{
+  border-bottom: 3px solid #ffffff;
+   padding-bottom: 10px;
+ }
+.planets {
+  height: 170px;
+  width: 170px;
+  margin: 26px;
+}
+
+.crew {
+  height: 222px;
+  width: 177.12px;
+  margin: 29px;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
+
+.vehicles {
+  height: 170px;
+  width: 100%;
+  padding: 29px;
+  padding-left: 0;
+}
+
+.sliderBtn {
+  background-color: #ffffff28;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sliderBtn:hover {
+  background-color: #ffffff48;
+}
+.sliderBtn:focus{
+  background-color: #FFFFFF;;
+}
+
+.sliderBtn2 {
+  background-color: #0B0D17;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: #ffffff46;
+  border-width: 1px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.sliderBtn2:hover{
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+
+}
+.sliderBtn2:focus{
+  background-color: #FFFFFF;
+  color: #0B0D17;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px 24px 24px;
+  padding-top: 24px;
+}
+
+.nav-links {
+  display: none;
+  /* Hide the navigation links by default */
+  flex-direction: column;
+  background-color: #ffffff2a;
+  backdrop-filter: blur(1.5rem);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  /* Set the width to 50% of the screen */
+  z-index: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  /* Allow scrolling within the menu */
+}
+
+li {
+  padding-left: 32px;
+  padding-top: 32px;
+}
+
+li:first-of-type {
+  padding-top: 80px;
+}
+
+li a {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.serialNo {
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-right: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+#sub-headings span{
+  text-align: center;
+
+}
+.background .serialNo {
+  color: #ffffff33;
+}
+
+.close-btn {
+  margin-left: 80%;
+  margin-top: 32px;
+}
+
+.nav-links.open {
+  display: flex;
+  /* Show the navigation links when the menu is open */
+}
+
+hr {
+  width: 80%;
+  margin: 0 28px 28px 30px;
+}
+
+@media(min-width:648px){
+  .homepg {
+    background-image: url(./assets/home/background-home-tablet.jpg);
+    background-size: cover;
+  }
+  .destinationspg {
+    background: url(./assets/destination/background-destination-tablet.jpg);
+    background-size: cover;
+  }
+  .crewpg{
+    background: url(./assets/crew/background-crew-tablet.jpg);
+    background-size: cover;
+  }
+  .launchpg {
+    background: url(./assets/technology/background-technology-tablet.jpg);
+    background-size: cover;
+  }
+  .content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .planets{
+    width: 300px;
+    height: 300px;
+  }
+  .crew{
+    width: 450px;
+    height: 440px;
+  }
+  .vehicles{
+    width: 100%;
+    height: 350px;
+    padding-left: 0;
+    order: 1;
+  }
+  .slider{
+    order: 1;
+  }
+  .launch-content{
+   display: flex;
+   flex-direction: column;
+  }
+  h1{
+    font-size: 9.375em;
+    padding: 25px;
+  }
+  h3{
+    font-size: 80px;
+    padding: 30px;
+  }
+  h4{
+    font-size: 2.25em;
+    padding-top: 15px;
+  }
+  h5,.serialNo{
+    font-size: 1.25em;
+    letter-spacing: 3.38px;
+    align-self: flex-start;
+    padding:20px 16px;
+  }
+h5{
+  padding-bottom:56px;
+}
+  p{
+    font-size: 1em;
+    line-height: 2.1em;
+    font-weight: lighter;
+    padding: 0 165px 20px;
+  }
+
+  #sub-headings {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 85px;
+    padding:0 190px ;
+  }
+
+  .subHeading2{
+    font-size: 14px;
+  }
+  .subHeading3{
+    font-size: 2em;
+
+  }
+  .landingpgBtn{
+    margin-top:152px;
+  }
+  
+  .crew-content{
+    display: flex;
+    flex-direction: column;
+  }
+  #crewpg hr{
+    display: none;
+  }
+
+  .nav-links {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    max-width: 450px;
+  }
+  li {
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+
+
+  .active{
+   border-bottom: 3px solid #ffffff;
+    padding-bottom: 31px;
+  }
+  li a:hover{
+    border-bottom: 3px solid #ffffff3b;
+    padding-bottom: 31px;
+  }
+
+  li:first-of-type {
+    padding-top: 22px;
+  }
+  
+  .menu-button,
+  .close-btn,.nav-links .serialNo {
+    display: none;
+    /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  hr {
+    width: 80%;
+    margin: 0 28px 28px 70px;
+  }
+  .landingpgBtn{
+    margin: 0;
+  }
+
+}
+
+
+@media(min-width:1024px) {
+  .homepg {
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-size: cover;
+  }
+  .destinationspg {
+    background: url(./assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+  }
+  .crewpg{
+    background: url(./assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+  }
+  .launchpg {
+    background: url(./assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+  }
+ .background{
+  align-items: normal;
+ }
+  #homepg{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 160px;
+  }
+  #destinationspg{
+    padding:0 160px;
+  }
+  #crewpg{
+    padding:0 140px 0 160px;
+  }
+  #launchpg{
+    padding:0 0 0 160px;
+  }
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+  }
+  .crew-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .launch-content{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  /* Layout and Navigation Styles */
+
+  .menu-button,
+  .close-btn {
+    display: none;
+    /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    margin-top: 32px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 830px;
+  }
+
+  .nav-links .serialNo{
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+  }
+.tabBar {
+  justify-content: flex-start;
+}
+  li {
+   
+    padding-left: 0;
+  }
+
+  .serialNo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 21px;
+    padding-right: 10px;
+    padding-left: 50px;
+  }
+  li:first-of-type {
+    padding-top: 22px;
+  }
+
+  #logo {
+    margin-top: 32px;
+  }
+
+ 
+  h1 {
+    font-size: 150px;
+    padding: 46px 0 50px 0;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 25px 0 25px 0;
+  }
+
+  h4 {
+    font-size: 56px;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  /* Subheadings and Text Styles */
+  h5 {
+    font-size: 28px;
+    padding-bottom: 0;
+  }
+  #homepg h5{
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+  p {
+    max-width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+    padding: 0;
+  }
+  #homepg p{
+    text-align: left;
+  }
+  .crew-content p,.launch-content p{
+    padding-left: 0;
+  }
+  #sub-headings{
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 50px;
+  }
+  .subHeading1 {
+    padding-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .subHeading2 {
+    padding-bottom: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    letter-spacing: 2.36px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .subHeading3 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+
+
+  .landingpgBtn {
+    width: 274px;
+    height: 274px;
+    font-size: 32px;
+
+  }
+
+  .landingpgBtn-hover {
+    height: 450px;
+    width: 450px;
+    margin-top: 70px;
+  }
+
+
+  .slider{
+    margin-top: 115px;
+  }
+  .sliderBtn {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+  
+  }
+
+  .sliderBtn2 {
+    font-size: 32px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin:0 50px 30px 0px;
+  }
+
+
+
+  .sliderBtn2:active {
+    background-color: #ffffff;
+  }
+
+  .sliderBtn:hover {
+    background-color: #ffffff54;
+  }
+
+  .sliderBtn:active {
+    background-color: #ffffff;
+  }
+  .planets {
+    height: 445px;
+    width: 445px;
+    padding-top: 98px;
+  }
+
+  .crew {
+    height: 702px;
+    width: 538px;
+    order: 2;
+  }
+
+  .vehicles {
+    height: 527px;
+    width: 515px;
+    order: 3;
+    padding: 0;
+    
+  }
+
+  .horizontal-line-container{
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    min-width: 35%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 10;
+  }
+  hr {
+    width: 90%;
+    margin:53px 0 25px 0;
+    height: 0.1px;
+    background-color: #ccc;
+  }
+}
+@media(min-width:1500px){
+  .horizontal-line-container{
+    min-width: 40%;
+  }
+}
+@media(min-width:1600px){
+  .horizontal-line-container{
+    min-width: 45%;
+  }
+}
