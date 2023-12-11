@@ -33,6 +33,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- React context API
 - [Vite](https://vitejs.dev/) - React framework
 
 
